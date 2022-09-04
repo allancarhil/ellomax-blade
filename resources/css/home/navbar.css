@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+i {
+	margin-right: 10px;
+}
+
+/*----------bootstrap-navbar-css------------*/
+.navbar-logo {
+
+	color: #fff;
+	margin-right: 5%;
+	margin-left: 2%;
+
+}
+
+.navbar-mainbg {
+	padding: 0px;
+}
+
+.logo {
+	width: 20vw;
+	height: 15vh;
+}
+
+#navbarSupportedContent {
+	overflow: hidden;
+	position: relative;
+}
+
+#navbarSupportedContent ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+#navbarSupportedContent li {
+	list-style-type: none;
+	float: right;
+}
+
+#navbarSupportedContent ul li a {
+	color: #0B91CE;
+	text-decoration: none;
+	font-size: 16px;
+	display: block;
+	padding: 20px 15px;
+
+
+}
+
+
+#navbarSupportedContent ul li a:hover::after {
+	display: block;
+	margin: auto;
+	background: blue;
+	width: auto;
+
+	
+}
+
+
+#navbarSupportedContent a:not(:only-child):after {
+	content: "\f105";
+	right: 20px;
+	top: 10px;
+	font-size: 14px;
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	padding-right: 3px;
+	vertical-align: middle;
+	font-weight: 900;
+	transition: 0.5s;
+}
+
+
+
+
+li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 5px 10px;
+  
+  }
+  
+  li > a {
+	color: #333;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+  }
+  
+  li > a::after {
+	content: "";
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0;
+	top: 5px;
+	background: transparent;
+	transition: all 0.3s;
+	
+  }
+  
+  li > a:hover::after, li > a.active-nav::after {
+	width: 100%;
+	background: blue;
+  }
+
+
+
+
+
+
+
+
+@media(min-width: 992px) {
+	.navbar-expand-custom {
+		-ms-flex-flow: row nowrap;
+		flex-flow: row nowrap;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+	}
+
+	.navbar-expand-custom .navbar-nav {
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+
+	.navbar-expand-custom .navbar-toggler {
+		display: none;
+	}
+
+	.navbar-expand-custom .navbar-collapse {
+		display: -ms-flexbox !important;
+		display: flex !important;
+		-ms-flex-preferred-size: auto;
+		flex-basis: auto;
+	}
+}
+
+
+@media (max-width: 991px) {
+	#navbarSupportedContent ul li a {
+		padding: 12px 30px;
+	}
+
+
+
+
+
+}

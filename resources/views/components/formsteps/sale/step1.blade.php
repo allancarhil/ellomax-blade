@@ -1,4 +1,6 @@
 <div class="salep1">
-    <h3>Venda, página 1</h3>
+    <input type="email" name="" id="">
+    <input type="email" name="" id="">
+    <input type="email" name="" id="">
     <span class="step-sale-2">-></span>
 </div>
