@@ -13,11 +13,20 @@ class CompanyMigration extends Migration
      */
     public function up()
     {
-        Schema::create('companies',function(Blueprint $table){
+        Schema::create('companies', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->foreignId('segment_id');
-            $table->foreignId('occupation_id');
+            $table->integer('type');
+            $table->integer('status');
+            $table->string('companyName');
+            $table->string('cnpj');
+            $table->string('ownerName');
+            $table->string('ownerMail');
+            $table->string('price');
+            $table->string('video');
+            $table->string('img');
+            $table->string('doc');
+            $table->string('segment_id');
+            $table->string('occupation_id');
             $table->timestamps();
         });
     }

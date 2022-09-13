@@ -7,9 +7,16 @@ mix.styles([
     'resources/css/home/home.css',
     'resources/css/home/formsteps.css',
     'resources/css/home/sale.css',
-    'resources/css/home/navbar.css'
+    'resources/css/home/navbar.css',
+    'resources/css/home/footer.css',
+    'resources/css/home/bootstrap-tagsinput.css'
+
+    
 ],'public/css/app.css').version();
 
+mix.styles([
+    'resources/css/components/card.css',
+],'public/css/card.css').version();
 
 mix.styles([
     'resources/css/login/main.css',
@@ -21,7 +28,6 @@ mix.styles([
     'resources/css/login/animate/animate.css',
     'public/fonts/vendor/font-awesome-4.7.0/css/font-awesome.css',
     'public/fonts/vendor/font-awesome-4.7.0/css/font-awesome.min.css',
-   
     ],'public/css/login.css').version();
 
 mix.scripts('node_modules/jquery/dist/jquery.js','public/js/jquery.js');
@@ -30,7 +36,9 @@ mix.scripts('node_modules/bootstrap/dist/js/bootstrap.bundle.js','public/js/boot
 mix.scripts([
     'resources/js/home/salesteps.js',
     'resources/js/home/rentsteps.js',
-    'resources/js/home/main.js'
+    'resources/js/home/main.js',
+    'node_modules/jquery/dist/jquery.js',
+    'resources/js/home/bootstrap-tagsinput.js',
 ],'public/js/app.js').version()
 
 mix.scripts([

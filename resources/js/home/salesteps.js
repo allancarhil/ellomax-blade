@@ -26,3 +26,14 @@ btnBackSale2.on('click',function(){
     salep3.hide()
     salep2.show()
 })
+
+const price = document.querySelector('#price')
+    price.addEventListener('keyup', (e) => {
+        let { value } = e.target
+
+        value = value.replace(/\D/g, "")
+        value = value.replace(/(\d{1,2})$/, ",$1")
+        value = value.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")
+
+        e.target.value = 'R$ '+ value
+    })

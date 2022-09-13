@@ -31,13 +31,21 @@
                     <img src="images/logonova.png" alt="IMG">
                 </div>
 
-                <form class="login100-form validate-form">
+                <form class="login100-form validate-form" action="{{route('auth.login')}}" method="POST">
+                    @csrf
                     <span class="login100-form-title">
                         BEM-VINDO
                     </span>
 
+                    @if(session()->has('recovery-email'))
+                    <div class="alert alert-success" role="alert">
+                        <p>Senha alterada com sucesso</p>
+                    </div>
+                    {{session()->forget('recovery-email')}}
+                    @endIf
+
                     <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                        <input class="input100" type="text" name="email" placeholder="Email">
+                        <input class="input100" type="text" name="email" placeholder="Email" value="allancarhil@gmail.com">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -53,22 +61,20 @@
                     </div>
 
                     <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">
-                            Login
-                        </button>
+                        <input type="submit" value="login" class="login100-form-btn">
                     </div>
 
                     <div class="text-center p-t-12">
                         <span class="txt1">
                             Esqueci:
                         </span>
-                        <a class="txt2" href="#">
+                        <a class="txt2" href="{{route('auth.form.recovery')}}">
                             Nome de usuário / Senha?
                         </a>
                     </div>
 
                     <div class="text-center p-t-136">
-                        <a class="txt2" href="#">
+                        <a class="txt2" href="{{route('auth.form.register')}}">
                             Criar conta
                             <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
                         </a>
@@ -86,7 +92,7 @@
     <!--===============================================================================================-->
     <script src="{{url(mix('js/bootstrap.js'))}}"></script>
     <!--===============================================================================================-->
- 
+
     <script>
         $('.js-tilt').tilt({
             scale: 1.1

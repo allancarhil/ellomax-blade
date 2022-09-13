@@ -15,6 +15,6 @@ class DatabaseSeeder extends Seeder
     {
         //(new SegmentSeed())->run();
         //(new OccupationSeed())->run();
-        (new CompanySeed())->run();
+        //(new CompanySeed())->run();
     }
 }

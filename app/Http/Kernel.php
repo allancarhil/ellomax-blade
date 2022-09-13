@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\IsLoggedMiddleware;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -39,6 +40,10 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
+        'IsLogged' => [
+            IsLoggedMiddleware::class,
+        ],
+        
         'api' => [
             // \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
             'throttle:api',

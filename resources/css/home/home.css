@@ -1,66 +1,507 @@
     @media only screen and (min-width: 960px) {
+        .container {
+            width: fit-content;
+        }
+
+        .owl-controls {
+            text-align: center;
+        }
+
+        .owl-controls .owl-dot {
+            display: inline-block;
+        }
+
+        .owl-controls .owl-dot span {
+            background-color: #333;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            border-radius: 30px;
+            display: block;
+            height: 12px;
+            margin: 5px 7px;
+            width: 12px;
+            filter: Alpha(Opacity=500);
+            /*IE7 fix*/
+            opacity: 0.5;
+        }
+
+        .owl-controls .owl-dot.active span,
+        .owl-controls .owl-dot:hover span {
+            filter: Alpha(Opacity=100);
+            /*IE7 fix*/
+            opacity: 1;
+        }
+
         .banner1 {
-            display: blockk;
+            display: block;
             padding-top: 20vh;
-            padding-bottom: 100vh;
+            padding-bottom: 90vh;
             width: 100%;
-            height: 100%;
             left: 50%;
             justify-items: center;
-            background: lightblue url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658443835/Ellomax/ellomax_zspreu.png") no-repeat center;
+            background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658443835/Ellomax/ellomax_zspreu.png") no-repeat center;
             background-size: 90%;
         }
+
+        .bannerAbout1 {
+            display: block;
+            padding-top: 20vh;
+            padding-bottom: 60vh;
+            width: 100%;
+            left: 50%;
+            justify-items: center;
+            background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658441713/Ellomax/sobre1_kzqkcq.png") no-repeat center;
+            background-size: 100%;
+        }
+
+        .bannerAbout2 {
+            display: block;
+
+            padding-bottom: 70vh;
+            width: 100%;
+            left: 50%;
+            justify-items: center;
+            background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658441713/Ellomax/sobre2_tbinn3.png") no-repeat center;
+            background-size: 100%;
+        }
+
+        .bannerAbout3 {
+            display: block;
+
+            padding-bottom: 70vh;
+            width: 100%;
+            left: 50%;
+            justify-items: center;
+            background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658441713/Ellomax/sobre3_qxw3jr.png") no-repeat center;
+            background-size: 100%;
+        }
+
+        .bannerAbout4 {
+            display: block;
+            padding-top: 30vh;
+            padding-bottom: 90vh;
+            width: 100%;
+            left: 50%;
+            justify-items: center;
+            background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658441713/Ellomax/sobre4_itsdrd.png") no-repeat center;
+            background-size: 100%;
+        }
+
+        .bannerAbout5 {
+            display: block;
+            padding-top: 35vh;
+            padding-bottom: 80vh;
+            width: 100%;
+            left: 50%;
+            justify-items: center;
+            background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658441713/Ellomax/sobre5_xjkdng.png") no-repeat center;
+            background-size: 100%;
+        }
+
+        .bannerAbout6 {
+            display: block;
+
+            padding-bottom: 50vh;
+            width: 100%;
+            left: 50%;
+            justify-items: center;
+            background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658441713/Ellomax/sobre6_ri6z9i.png") no-repeat center;
+            background-size: 100%;
+        }
+
         .banner1 button {
             width: 24%;
             height: 6%;
             border-radius: 25px;
             position: absolute;
             left: 55%;
-            top: 110%;
+            top: 100%;
         }
+
         .banner2 {
             display: block;
-            padding-top: 20vh;
-            padding-bottom: 100vh;
+
+            padding-bottom: 50vh;
             width: 100%;
-            height: 100%;
             left: 50%;
             justify-items: center;
-            background: lightblue url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658441714/Ellomax/banner2_zgplgg.png") no-repeat ;
+            background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658441714/Ellomax/banner2_zgplgg.png") no-repeat;
             background-size: 50%;
+            background-position: 85%;
+            background-position-y: 5%;
         }
+
+        .chains {
+            display: block;
+            padding-bottom: 40vh;
+            width: 100%;
+            left: 50%;
+            justify-items: center;
+            background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658441710/Ellomax/chain_qepdef.png") no-repeat;
+            background-size: 85%;
+            background-position: center;
+
+
+        }
+
+        .banner4 {
+            display: blockk;
+            padding-top: 20vh;
+            padding-bottom: 90vh;
+            width: 100%;
+            left: 50%;
+            justify-items: center;
+            background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658441714/Ellomax/perfil_vigsln.png") no-repeat center;
+            background-size: 90%;
+        }
+
+        .banner4 button {
+            width: 24%;
+            height: 6%;
+            border-radius: 25px;
+            position: absolute;
+            left: 55%;
+            top: 100%;
+        }
+
+        /*
+BEGIN COUNTER
+
+*/
+        .counter-box {
+            display: block;
+            background: #f6f6f6;
+            padding: 40px 20px 37px;
+            text-align: center
+        }
+
+        .counter-box p {
+            margin: 5px 0 0;
+            padding: 0;
+            color: #909090;
+            font-size: 18px;
+            font-weight: 500
+        }
+
+        .counter-box i {
+            font-size: 60px;
+            margin: 0 0 15px;
+            color: #d2d2d2
+        }
+
+        .counter {
+            display: block;
+            font-size: 50px;
+            font-weight: 700;
+            color: #666;
+            line-height: 28px
+        }
+
+        .counter-box.colored {
+            background: #0B91CE;
+            border-radius: 15px;
+        }
+
+        .counter-box.colored p,
+        .counter-box.colored i,
+        .counter-box.colored .counter {
+            color: #fff
+        }
+
+        .results h1 {
+            text-align: center;
+            margin-bottom: 45px;
+            margin-top: -20px;
+        }
+
+
+        /*
+END COUNTER
+*/
+
+
+
+        /*
+BEGIN CONTACT
+*/
+
+.contactbg{
+    background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658441714/Ellomax/banner2_zgplgg.png") no-repeat;
+    background-size: 100%;
+    justify-items: right;
+    display: flex;
+    margin-bottom: 20vh;
+    padding-bottom: 10vh;
+}
+        .contact-form {
+            background: #fff;
+            margin-top: 10%;
+            margin-bottom: 5%;
+            width: 50%;
+        }
+
+        .contact-form .form-control {
+            border-radius: 1rem;
+            margin-top: 15px;
+        }
+
+        .contact-image {
+            text-align: center;
+        }
+
+        .contact-image img {
+
+            width: 10%;
+            margin-top: -3%;
+
+        }
+
+        .contact-form form {
+            padding: 14%;
+        }
+
+        .contact-form form .row {
+            margin-bottom: -7%;
+            padding-top: 10px;
+        }
+
+
+        .contact-form h2,
+        .contact-form h3  {
+            margin-bottom: 8%;
+            margin-top: -15%;
+            text-align: center;
+            color: #DC784C;
+            font-size: 30px;
+        }
+
+        .contact-form .btnContact {
+            width: 50%;
+            border: none;
+            border-radius: 1rem;
+            padding: 1.5%;
+            background: #DC784C;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .btnContactSubmit {
+            width: 50%;
+            border-radius: 1rem;
+            padding: 1.5%;
+            color: #fff;
+            background-color: #0062cc;
+            border: none;
+            cursor: pointer;
+        }
+
+        /*
+END CONTACT
+*/
+/*BEGIN CONTACT ABOUT*/
+  .contact-form-about {
+            background: #fff;
+            margin-top: 10%;
+            margin-bottom: 5%;
+            width: 40%;
+            float: right;
+            margin-right: 100px;
+            border-radius: 75px;
+        }
+
+        .contact-form-about .form-control {
+            border-radius: 1rem;
+            margin-top: 15px;
+        }
+
+        .contact-image {
+            text-align: center;
+        }
+
+        .contact-image img {
+
+            width: 10%;
+            margin-top: -3%;
+
+        }
+
+        .contact-form-about form {
+            padding: 14%;
+        }
+
+        .contact-form-about form .row {
+            margin-bottom: -7%;
+            padding-top: 10px;
+        }
+
+
+        .contact-form-about h2,
+        .contact-form-about h3  {
+            margin-bottom: 8%;
+            margin-top: -15%;
+            text-align: center;
+            color: #DC784C;
+            font-size: 30px;
+        }
+
+        .contact-form-about .btnContact {
+            width: 50%;
+            border: none;
+            border-radius: 1rem;
+            padding: 1.5%;
+            background: #DC784C;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .btnContactSubmit {
+            width: 50%;
+            border-radius: 1rem;
+            padding: 1.5%;
+            color: #fff;
+            background-color: #0062cc;
+            border: none;
+            cursor: pointer;
+        }
+/*END CONTACT ABOUT*/
+        /*
+BEGIN TESTIMONIALS
+*/
+
+        .snip1533 {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+            color: #d2652d;
+            display: inline-block;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-size: 16px;
+            margin: 35px 10px 10px;
+            max-width: 310px;
+            min-width: 250px;
+            position: relative;
+            text-align: center;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 15%;
+            border: 5px solid #d2652d;
+
+        }
+
+        .snip1533 *,
+        .snip1533 *:before {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all 0.1s ease-out;
+            transition: all 0.1s ease-out;
+
+        }
+
+        .snip1533 figcaption {
+            padding: 13% 10% 12%;
+        }
+
+        .snip1533 figcaption:before {
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+            color: #d2652d;
+            content: "\f10d";
+            font-family: 'FontAwesome';
+            font-size: 32px;
+            font-style: normal;
+            left: 50%;
+            line-height: 60px;
+            position: absolute;
+            top: -30px;
+            width: 60px;
+        }
+
+        .snip1533 h3 {
+            color: #3c3c3c;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 24px;
+            margin: 10px 0 5px;
+        }
+
+        .snip1533 h4 {
+            font-weight: 400;
+            margin: 0;
+            opacity: 0.5;
+        }
+
+        .snip1533 blockquote {
+            font-style: italic;
+            font-weight: 300;
+            margin: 0 0 20px;
+        }
+
+
+        /* Demo purposes only */
+
+        body {
+
+            text-align: center;
+        }
+
+        /*
+END TESTIMONIALS
+*/
+
+
+
+
     }
+
+
+
+
+
+
+
+
     @media only screen and (min-width: 1440px) {
         /* styles for browsers larger than 1440px; */
     }
+
     @media only screen and (min-width: 2000px) {
         /* for sumo sized (mac) screens */
     }
+
     @media only screen and (max-device-width: 480px) {
-       /* styles for mobile browsers smaller than 480px; (iPhone) */
+        /* styles for mobile browsers smaller than 480px; (iPhone) */
     }
+
     @media only screen and (device-width: 768px) {
-       /* default iPad screens */
-       .banner1 {
-        display: flexbox;
-        padding-top: 20vh;
-        padding-bottom: 15vh;
-        justify-items: center;
-        background: lightblue url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658443835/Ellomax/ellomax_zspreu.png") no-repeat center;
-        background-size: 100%;
-    } 
-    .banner1 button {
-        width: 24%;
-        height: 6%;
-        border-radius: 25px;
-        position: absolute;
-        left: 5%;
-        top: 10%;
+
+        /* default iPad screens */
+        .banner1 {
+            display: flexbox;
+            padding-top: 20vh;
+            padding-bottom: 15vh;
+            justify-items: center;
+            background: lightblue url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658443835/Ellomax/ellomax_zspreu.png") no-repeat center;
+            background-size: 100%;
+        }
+
+        .banner1 button {
+            width: 24%;
+            height: 6%;
+            border-radius: 25px;
+            position: absolute;
+            left: 5%;
+            top: 10%;
+        }
     }
-    }
+
     /* different techniques for iPad screening */
     @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-      /* For portrait layouts only */
+        /* For portrait layouts only */
     }
 
     @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
@@ -71,7 +512,8 @@
             justify-items: center;
             background: lightblue url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658443835/Ellomax/ellomax_zspreu.png") no-repeat center;
             background-size: 100%;
-        }  
+        }
+
         .banner1 button {
             width: 24%;
             height: 6%;
@@ -80,6 +522,7 @@
             left: 5%;
             top: 10%;
         }
+
     }
 
     @media screen and (min-device-width: 360px) and (max-device-width: 481px) and (orientation:landscape) {
@@ -90,7 +533,8 @@
             justify-items: center;
             background: lightblue url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658443835/Ellomax/ellomax_zspreu.png") no-repeat center;
             background-size: 100%;
-        }  
+        }
+
         .banner1 button {
             width: 24%;
             height: 6%;
@@ -99,8 +543,5 @@
             left: 5%;
             top: 10%;
         }
-        
+
     }
-
-
- 

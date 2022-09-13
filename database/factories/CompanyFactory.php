@@ -14,7 +14,9 @@ class CompanyFactory extends Factory
     public function definition()
     {
         return [
-            'name'=> $this->faker->name(),
+            'type'=>1,
+            'status'=>1,
+            'companyName'=> $this->faker->name(),
             'occupation_id'=>rand(1,10),
             'segment_id'=>rand(1,10),
         ];

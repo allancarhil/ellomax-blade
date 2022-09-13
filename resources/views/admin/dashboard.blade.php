@@ -2,6 +2,8 @@
 
 @section('conteudo')
     <h2>Dashboard</h2>
-
-    <a href="{{route('auth.logout')}}"></a>
+    {{$user->name}}
+    {{$user->remember_token}}
+    <a href="{{route('auth.logout')}}">Logout</a>
+s
 @endsection
