@@ -26,10 +26,32 @@
 
 
         <div class="bs-example">
-            <input type="text" value="" data-role="tagsinput" id="tags" />
+            <form action="{{route('home.action.simple.search')}}" method="post">
+                @csrf
 
+                <input type="text" name="occupation" value="" data-role="tagsinput" id="tags" />
+                <input type="submit" value="BUSCAR">
+            </form>
         </div>
         </form>
+        <div class="advancedfilter">
+            <form action="{{route('home.action.advanced.search')}}" method="post">
+                @csrf
+                <select name="segment" id="segment">
+                    @foreach($segments as $segment)
+                    <option value="{{$segment->id}}">{{$segment->name}}</option>
+                    @endforeach
+                </select>
+
+                <select name="estado" id="estado">
+                    <option value="">Selecione um estado</option>
+                </select>
+                <select name="cidade" id="cidade">
+                <option value="">Selecione uma cidade</option>
+                </select>
+                <input type="submit" value="BUSCAR">
+            </form>
+        </div>
         <div class="owl-carousel owl-theme">
             <div class="item h-100 d-flex justify-content-center align-items-center">
                 @foreach($companies as $company)
@@ -94,12 +116,12 @@
         </div>
 
         <section class="banner3">
-        <div class="chains">
-        </div>
+            <div class="chains">
+            </div>
 
-    </section>
+        </section>
         <section class="testimonials">
-        <h1>O que falam de nós</h1>
+            <h1>O que falam de nós</h1>
             <figure class="snip1533">
                 <figcaption>
                     <blockquote>
@@ -134,7 +156,7 @@
 
 
 
-       
+
 
 
 

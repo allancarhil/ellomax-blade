@@ -17,8 +17,9 @@ class CompanyFactory extends Factory
             'type'=>1,
             'status'=>1,
             'companyName'=> $this->faker->name(),
-            'occupation_id'=>rand(1,10),
+            'occupation'=>'bar,restaurante',
             'segment_id'=>rand(1,10),
+            'cnpj'=>'34589605000181'    
         ];
     }
 }

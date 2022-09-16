@@ -39,7 +39,10 @@ mix.scripts([
     'resources/js/home/main.js',
     'node_modules/jquery/dist/jquery.js',
     'resources/js/home/bootstrap-tagsinput.js',
+    
 ],'public/js/app.js').version()
+
+mix.scripts('resources/js/scripts.js','public/js/buscacidades.js').version();
 
 mix.scripts([
     'node_modules/jquery/dist/jquery.js',

@@ -14,6 +14,7 @@ class Company extends Model
         'status',
         'companyName',
         'cnpj',
+        'cpf',
         'ownerName',
         'ownerMail',
         'price',
@@ -21,15 +22,17 @@ class Company extends Model
         'img',
         'doc',
         'segment_id',
-        'occupation_id',
+        'occupation',
     ];
-    public function occupation()
-    {
-        return $this->hasOne(Occupation::class,'id','occupation_id');
-    }
+    
     public function segment()
     {
         return $this->hasOne(Segment::class,'id','segment_id');
+    }
+
+    public function users()
+    {
+        return $this->belongsTo(User::class);
     }
 
 }

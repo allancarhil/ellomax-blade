@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'cpf',
         'remember_token',
     ];
 
@@ -41,4 +42,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function companies()
+    {
+        return $this->hasMany(Company::class,'cpf_user','cpf');
+    }
 }

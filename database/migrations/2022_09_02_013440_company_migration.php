@@ -26,7 +26,9 @@ class CompanyMigration extends Migration
             $table->string('img');
             $table->string('doc');
             $table->string('segment_id');
-            $table->string('occupation_id');
+            $table->string('occupation');
+            $table->string('cpf_user');
+            $table->foreign('cpf_user')->references('cpf')->on('users');
             $table->timestamps();
         });
     }

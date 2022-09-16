@@ -77,7 +77,7 @@
     @include('components.includes.scripts')
     @show
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    
 
     <!-- Footer aqui -->
 
@@ -115,8 +115,6 @@
                 <li class="menu-item menu-item-type-post_type menu-item-object-page">
                   <a href="https://ellonegocios.wordpress.com/">Blog</a>
                 </li><br>
-              
-                
               </ul>
             </div>
 

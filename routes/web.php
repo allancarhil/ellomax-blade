@@ -6,6 +6,7 @@ use App\Http\Controllers\Pages\SellController;
 use App\Http\Controllers\home\HomeController;
 use App\Http\Middleware\IsLoggedMiddleware;
 use Illuminate\Support\Facades\Route;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /**
  * Home
@@ -48,24 +49,30 @@ Route::post("/make-sell", [SellController::class, 'saveSell'])->name("pages.acti
 // });
 
 Route::group(['prefix' => 'dashboard', 'middleware' => ['IsLogged']], function () {
-  Route::get("/", [DashboardController::class, 'index'])->name("dashboard.index");
+Route::get("/", [DashboardController::class, 'index'])->name("dashboard.index");
+Route::get('/perfil',[DashboardController::class,'showProfile'])->name('dashboard.form.perfil');
+Route::put('/perfil/{id}',[DashboardController::class,'editProfile'])->name('dashboard.action.perfil');
+Route::get('/minhas-empresas',[DashboardController::class,'showMyCompanies'])->name('dashboard.show.my.companies');
 });
 
 //Product route
-
-Route::post('/simple-search',[HomeController::class,'simpleSearch'])->name("home.action.simpleSearch");
-Route::get('/company/{id}',[HomeController::class,'showCompanyPage'])->name("show.company.page");
+Route::post('/simple-search', [HomeController::class, 'simpleSearch'])->name("home.action.simple.search");
+Route::post('/advanced-search', [HomeController::class, 'advancedSearch'])->name("home.action.advanced.search");
+Route::get('/company/{id}', [HomeController::class, 'showCompanyPage'])->name("show.company.page");
 
 
 
 
 //About Route
-
-Route::get('/aboutus',[HomeController::class,'showAboutUsPage'])->name("show.aboutus.page");
+Route::get('/aboutus', [HomeController::class, 'showAboutUsPage'])->name("show.aboutus.page");
 
 //Contact Route
-
-Route::get('/contact',[HomeController::class,'showContactPage'])->name("show.contact.page");
+Route::get('/contact', [HomeController::class, 'showContactPage'])->name("show.contact.page");
 
 //Be one Route
-Route::get('/be-one-of-us',[HomeController::class,'showBeOnePage'])->name("show.beone.page");
+Route::get('/be-one-of-us', [HomeController::class, 'showBeOnePage'])->name("show.beone.page");
+
+//Gera hash
+Route::get('/gerahash', function () {
+  echo Illuminate\Support\Facades\Hash::make('123');
+});
