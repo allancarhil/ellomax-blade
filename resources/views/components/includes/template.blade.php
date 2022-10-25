@@ -21,16 +21,13 @@
   <nav>
 
     <nav class="navbar navbar-expand-custom navbar-mainbg">
-      <a class="navbar-brand navbar-logo" href="{{route('home.index')}}"><img class="logo" src="images/logonova.png" alt="IMG"></a>
+      <a class="navbar-brand navbar-logo" href="{{route('home.index')}}"><img class="logo" src="{{url('/')}}/images/logonova.png" alt="IMG"></a>
       <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars text-white"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <div class="hori-selector">
-            <div class="left"></div>
-            <div class="right"></div>
-          </div>
+
           <li class="nav-item active">
             <a class="nav-link" href="/login">Comprar</a>
           </li>
@@ -77,15 +74,11 @@
     @include('components.includes.scripts')
     @show
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
     <!-- Footer aqui -->
-
-
-
-
-
-
 
     <div class="pg-footer">
       <footer class="footer">
@@ -96,7 +89,7 @@
           <div class="footer-content-column">
             <div class="footer-logo">
               <a class="footer-logo-link" href="{{route('home.index')}}">
-                <img src="images/logobranca.png" alt="logofooter">
+                <img src="{{url('/')}}/images/logobranca.png" alt="logofooter">
               </a>
             </div>
             <div class="footer-menu">
@@ -111,7 +104,7 @@
                 <li class="menu-item menu-item-type-custom menu-item-object-custom">
                   <a target="_blank" rel="noopener noreferrer" href="{{route('show.aboutus.page')}}">Sobre nós</a>
                 </li><br>
-              
+
                 <li class="menu-item menu-item-type-post_type menu-item-object-page">
                   <a href="https://ellonegocios.wordpress.com/">Blog</a>
                 </li><br>
@@ -126,11 +119,11 @@
                 <li class="menu-item menu-item-type-custom menu-item-object-custom">
                   <a target="_blank" rel="noopener noreferrer" href="{{route('show.aboutus.page')}}">Compra</a>
                 </li><br>
-              
+
                 <li class="menu-item menu-item-type-post_type menu-item-object-page">
                   <a href="#">Venda</a>
                 </li><br>
-              
+
                 <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
                   <a href="#">Arrendamento</a>
                 </li><br>
@@ -141,11 +134,7 @@
             </div>
           </div>
           <div class="footer-content-column">
-            <div class="footer-call-to-action">
-              <h2 class="footer-call-to-action-title"> Vamos Conversar?</h2>
-              <p class="footer-call-to-action-description"> Possui alguma dúvida??</p>
-              <a class="footer-call-to-action-button button" href="{{route('show.contact.page')}}" target="_self"> Fale conosco </a>
-            </div>
+
             <div class="footer-call-to-action">
               <h2 class="footer-call-to-action-title"> Nosso telefone</h2>
               <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" href="tel:+(55)32 32411955" target="_self"> +553232411955 </a></p>
@@ -156,7 +145,15 @@
             </div>
           </div>
 
-          <hr style="width: 80vw;color:black;margin-top:270px;">
+
+          <div class="footer-call-to-action-contact">
+            <h2 class="footer-call-to-action-title"> Vamos Conversar?</h2>
+            <p class="footer-call-to-action-description"> Possui alguma dúvida??</p>
+            <a class="footer-call-to-action-button button" href="{{route('show.contact.page')}}" target="_self"> Fale conosco </a>
+          </div>
+
+
+          <hr style="width: 80vw;color:black;">
           <div class="footer-social-links"> <svg class="footer-social-amoeba-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 54">
               <path class="footer-social-amoeba-path" d="M223.06,43.32c-.77-7.2,1.87-28.47-20-32.53C187.78,8,180.41,18,178.32,20.7s-5.63,10.1-4.07,16.7-.13,15.23-4.06,15.91-8.75-2.9-6.89-7S167.41,36,167.15,33a18.93,18.93,0,0,0-2.64-8.53c-3.44-5.5-8-11.19-19.12-11.19a21.64,21.64,0,0,0-18.31,9.18c-2.08,2.7-5.66,9.6-4.07,16.69s.64,14.32-6.11,13.9S108.35,46.5,112,36.54s-1.89-21.24-4-23.94S96.34,0,85.23,0,57.46,8.84,56.49,24.56s6.92,20.79,7,24.59c.07,2.75-6.43,4.16-12.92,2.38s-4-10.75-3.46-12.38c1.85-6.6-2-14-4.08-16.69a21.62,21.62,0,0,0-18.3-9.18C13.62,13.28,9.06,19,5.62,24.47A18.81,18.81,0,0,0,3,33a21.85,21.85,0,0,0,1.58,9.08,16.58,16.58,0,0,1,1.06,5A6.75,6.75,0,0,1,0,54H236C235.47,54,223.83,50.52,223.06,43.32Z"></path>
             </svg>
@@ -180,14 +177,17 @@
             </a>
             <a class="footer-social-link github" href="#" target="_blank">
               <span class="hidden-link-text">Github</span>
-              <svg xmlns="http://www.w3.org/2000/svg" style="fill:white;" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>            </a>
+              <svg xmlns="http://www.w3.org/2000/svg" style="fill:white;" viewBox="0 0 448 512">
+                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+              </svg> </a>
           </div>
         </div>
         <div class="footer-copyright">
           <div class="footer-copyright-wrapper">
             <p class="footer-copyright-text">
-              <a class="footer-copyright-link" href="#" target="_self"> ®Copyright © Ellomax. - 2022. Todos os direitos reservados <br/>
-Termos de uso e privacidade.</a>
+              <a class="footer-copyright-link" href="#" target="_self"> ®Copyright © Ellomax. - 2022. Todos os direitos reservados <br />
+                Termos de uso e privacidade.</a>
             </p>
           </div>
         </div>

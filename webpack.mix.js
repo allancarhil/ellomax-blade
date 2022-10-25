@@ -9,8 +9,9 @@ mix.styles([
     'resources/css/home/sale.css',
     'resources/css/home/navbar.css',
     'resources/css/home/footer.css',
-    'resources/css/home/bootstrap-tagsinput.css'
-
+    'resources/css/home/bootstrap-tagsinput.css',
+    'public/fonts/vendor/font-awesome-4.7.0/css/font-awesome.css',
+    'public/fonts/vendor/font-awesome-4.7.0/css/font-awesome.min.css',
     
 ],'public/css/app.css').version();
 

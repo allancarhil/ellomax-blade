@@ -1,7 +1,11 @@
 <div class="salep3">
+<div class="form-group">
+        <label for="main_image">Imagem de capa aqui burro</label>
+        <input type="file" name="main_image" id="main_image">
+    </div>
     <div class="form-group">
         <label for="img">Imagem aqui burro</label>
-        <input type="file" name="img" id="img">
+        <input type="file" name="images[]" id="images" multiple>
     </div>
     <div class="form-group">
         <label for="video">Video aqui besta</label>

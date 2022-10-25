@@ -23,7 +23,8 @@ class CompanyMigration extends Migration
             $table->string('ownerMail');
             $table->string('price');
             $table->string('video');
-            $table->string('img');
+            $table->string('main_image');
+            $table->string('images')->nullable()->default(null);
             $table->string('doc');
             $table->string('segment_id');
             $table->string('occupation');

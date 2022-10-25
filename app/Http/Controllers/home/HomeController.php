@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\home;
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Controller;
 use App\Models\Company;
 use App\Models\Segment;
@@ -17,12 +18,15 @@ class HomeController extends Controller
         return view("home.index", [
             'segments' => $segments,
             'companies' => $companies,
+            'user'=>AuthController::me()
         ]);
     }
 
     public function showCompanyPage(Request $request)
     {
         $company = Company::find($request->id);
+        $company->images=explode(',',$company->images);
+        //dd($company);
         return view('home.company', [
             'company' => $company
         ]);

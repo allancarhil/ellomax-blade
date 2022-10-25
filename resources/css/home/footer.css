@@ -10,6 +10,7 @@ a {
 
 .pg-footer {
     font-family: 'Roboto', sans-serif;
+    margin-top:10%;
 }
 
 
@@ -124,6 +125,9 @@ a {
     position: relative;
 }
 
+.footer-call-to-action-contact{
+    margin-top: 20%;
+}
 .footer-call-to-action {
     margin-top: 30px;
 }

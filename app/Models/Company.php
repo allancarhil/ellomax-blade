@@ -19,10 +19,12 @@ class Company extends Model
         'ownerMail',
         'price',
         'video',
-        'img',
+        'main_image',
+        'images',
         'doc',
         'segment_id',
         'occupation',
+        'cpf_user',
     ];
     
     public function segment()

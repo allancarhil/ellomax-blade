@@ -44,9 +44,11 @@ class AuthController extends Controller
     public function createAccount(Request $request)
     {
         $data = [
+            'cpf'=>$request->cpf,
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->pass),
+           
         ];
         if (User::where("email", "=", $request->email)->first()) {
             return redirect(route("auth.form.register"));

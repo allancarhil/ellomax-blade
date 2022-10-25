@@ -12,7 +12,7 @@
 
     <div class="wsk-cp-product">
         <div class="wsk-cp-img">
-            <img src="{{url("storage/$company->img")}}" alt="Product" class="img-responsive" />
+            <img src="{{url("storage/$company->main_image")}}" alt="Product" class="img-responsive" />
 
         </div>
 
@@ -36,7 +36,7 @@
                 <div class="wcf-left"><span class="price">{{$company->price}}</span></div>
                 <div class="wcf-right"><a href="#" class="buy-btn"><i class="fa-solid fa-magnifying-glass"></i></a></div>
                 <div class="wcf-right"><a href="{{route('show.company.page',['id'=>$company->id])}}" class="heart-btn"><i class="fa-solid fa-heart"></i></a></div>
-                @if(session()->has("usuario-logado"))
+                @if(session()->has("usuario-logado") && $company->cpf_user== $user->cpf)
                 <div class="wcf-right"><a href="{{route('show.company.page',['id'=>$company->id])}}" class="heart-btn"><i class="fa-solid fa-heart"></i></a></div>
                 @endif
             </div>
