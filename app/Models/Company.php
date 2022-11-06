@@ -25,6 +25,24 @@ class Company extends Model
         'segment_id',
         'occupation',
         'cpf_user',
+        'sale_type',
+        'trade_mark',
+        'state',
+        'city',
+        'neighborhood',
+        'zip_code',
+        'number',
+        'additional',
+        'street',
+        'description',
+        'area',
+        'number_employees',
+        'profits',
+        'month_profits',
+        'working_capital',
+        'debts',
+        'roi_month',
+        'break_even'
     ];
     
     public function segment()

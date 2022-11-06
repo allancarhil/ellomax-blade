@@ -53,7 +53,25 @@ class SellController extends Controller
                 'doc' => $this->uploadFile($request, 'doc'),
                 "segment_id" => 1,
                 "occupation" => 'bar',
-                "cpf_user" => AuthController::me()->cpf
+                "cpf_user" => AuthController::me()->cpf,
+                'sale_type'=>$request->sale_type,
+                'trade_mark'=>$request->trade_mark,
+                'state'=>$request->state,
+                'city'=>$request->city,
+                'neighborhood'=>$request->neighborhood,
+                'zip_code'=>$request->zip_code,
+                'number'=>$request->number,
+                'additional'=>$request->additional,
+                'street'=>$request->street,
+                'description'=>$request->description,
+                'area'=>$request->area,
+                'number_employees'=>$request->number_employees,
+                'profits'=>$request->profits,
+                'month_profits'=>$request->month_profits,
+                'working_capital'=>$request->working_capital,
+                'debts'=>$request->working_capital,
+                'roi_month'=>$request->roi_month,
+                'break_even'=>$request->break_even,
             ];
             $company = new Company($data);
         }
@@ -84,3 +102,5 @@ class SellController extends Controller
         return $filename;
     }
 }
+
+

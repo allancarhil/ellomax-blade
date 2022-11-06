@@ -27,13 +27,19 @@ class HomeController extends Controller
         $company = Company::find($request->id);
         $company->images=explode(',',$company->images);
         //dd($company);
+        $tags = explode(',', $company->occupation);
+
+        // dd($tags);
         return view('home.company', [
-            'company' => $company
+            'company' => $company,
+            'tags'=>$tags
         ]);
+
     }
 
     public function simpleSearch(Request $request)
     {
+        // dd($request->all());
         $tags = explode(',', $request->occupation);
         $companies = Company::select('*');
         foreach ($tags as $tag) {
@@ -55,7 +61,7 @@ class HomeController extends Controller
     {
         //Para cada orWhere, verificar se existe o request com $request->has()
         $estado=$this->getEstado($request->estado);
-        dd($estado);
+        // dd($estado);
         $companies = Company::orWhere("segment_id", "like", "%{$request->segmentId}%");
         if($request->has('lowPrice')){
             $companies=$companies->orWhere();
@@ -92,5 +98,13 @@ class HomeController extends Controller
     public function showBeOnePage(Request $request)
     {
         return view('home.beoneofus');
+    }
+    public function showPreBuyPage(Request $request)
+    {
+        return view('home.preBuy');
+    }
+    public function showPreSellPage(Request $request)
+    {
+        return view('home.preSell');
     }
 }

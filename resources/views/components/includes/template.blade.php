@@ -18,7 +18,7 @@
 
 <body>
 
-  <nav>
+
 
     <nav class="navbar navbar-expand-custom navbar-mainbg">
       <a class="navbar-brand navbar-logo" href="{{route('home.index')}}"><img class="logo" src="{{url('/')}}/images/logonova.png" alt="IMG"></a>
@@ -29,10 +29,10 @@
         <ul class="navbar-nav ml-auto">
 
           <li class="nav-item active">
-            <a class="nav-link" href="/login">Comprar</a>
+            <a class="nav-link" href="{{route('show.prebuy.page')}}">Comprar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{route('pages.form.sell')}}">Vender</a>
+            <a class="nav-link" href="{{route('show.presell.page')}}">Vender</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="javascript:void(0);">Arrendar</a>

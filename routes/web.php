@@ -56,7 +56,7 @@ Route::get('/minhas-empresas',[DashboardController::class,'showMyCompanies'])->n
 });
 
 //Product route
-Route::post('/simple-search', [HomeController::class, 'simpleSearch'])->name("home.action.simple.search");
+Route::any('/simple-search/{occupation?}', [HomeController::class, 'simpleSearch'])->name("home.action.simple.search");
 Route::post('/advanced-search', [HomeController::class, 'advancedSearch'])->name("home.action.advanced.search");
 Route::get('/company/{id}', [HomeController::class, 'showCompanyPage'])->name("show.company.page");
 
@@ -65,6 +65,14 @@ Route::get('/company/{id}', [HomeController::class, 'showCompanyPage'])->name("s
 
 //About Route
 Route::get('/aboutus', [HomeController::class, 'showAboutUsPage'])->name("show.aboutus.page");
+
+//prebuy
+Route::get('/prebuy', [HomeController::class, 'showPreBuyPage'])->name("show.prebuy.page");
+
+//presell
+Route::get('/presell', [HomeController::class, 'showPreSellPage'])->name("show.presell.page");
+
+
 
 //Contact Route
 Route::get('/contact', [HomeController::class, 'showContactPage'])->name("show.contact.page");

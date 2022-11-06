@@ -33,11 +33,14 @@
             </div>
             <hr>
             <div class="card-footer">
-                <div class="wcf-left"><span class="price">{{$company->price}}</span></div>
-                <div class="wcf-right"><a href="#" class="buy-btn"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                <div class="price"><span class="price">{{$company->price}}</span></div>
+
+            </div>
+            <div class="actionsBtn">
+                <div class="actions"><a href="{{route('show.company.page',['id'=>$company->id])}}" class="buy-btn"><i class="fa-solid fa-magnifying-glass"></i></a></div>
                 <div class="wcf-right"><a href="{{route('show.company.page',['id'=>$company->id])}}" class="heart-btn"><i class="fa-solid fa-heart"></i></a></div>
                 @if(session()->has("usuario-logado") && $company->cpf_user== $user->cpf)
-                <div class="wcf-right"><a href="{{route('show.company.page',['id'=>$company->id])}}" class="heart-btn"><i class="fa-solid fa-heart"></i></a></div>
+                <div class="heart"><a href="{{route('show.company.page',['id'=>$company->id])}}" class="heart-btn"><i class="fa-solid fa-heart"></i></a></div>
                 @endif
             </div>
         </div>

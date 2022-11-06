@@ -6,7 +6,7 @@
 
 
 <div class="banner1">
-    <button>teste</button>
+    <button>CONHEÇA AS OPORTUNIDADES</button>
 </div>
 
 <section class="banner">
@@ -144,7 +144,7 @@
 
 <section class="banner">
     <div class="banner4">
-        <button>teste</button>
+        
     </div>
 
     <section class="banner3">

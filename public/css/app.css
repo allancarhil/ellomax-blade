@@ -35,7 +35,7 @@
 
 
 
-        
+
         .banner1 {
             display: block;
             padding-top: 20vh;
@@ -46,6 +46,63 @@
             background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658443835/Ellomax/ellomax_zspreu.png") no-repeat center;
             background-size: 90%;
         }
+
+        .banner1preBuy {
+            display: block;
+            padding-top: 20vh;
+            padding-bottom: 90vh;
+            width: 100%;
+            left: 50%;
+            justify-items: center;
+            background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1666957807/Ellomax/prebuy1_vnysgi.png") no-repeat center;
+            background-size: 90%;
+        }
+
+        .banner2preBuy {
+            display: block;
+            padding-top: 20vh;
+            padding-bottom: 90vh;
+            width: 100%;
+            left: 50%;
+            justify-items: center;
+            background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1666959475/Ellomax/ellomax1_ie5h6f.png") no-repeat center;
+            background-size: 90%;
+        }
+
+        .banner1preSell {
+            display: block;
+            padding-top: 20vh;
+            padding-bottom: 90vh;
+            width: 100%;
+            left: 50%;
+            justify-items: center;
+            background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658441714/Ellomax/venda_pyodgi.png") no-repeat center;
+            background-size: 90%;
+        }
+
+        .banner2preSell {
+            display: block;
+            padding-top: 20vh;
+            padding-bottom: 90vh;
+            width: 100%;
+            left: 50%;
+            justify-items: center;
+            background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1666959475/Ellomax/ellomax1_ie5h6f.png") no-repeat center;
+            background-size: 90%;
+        }
+
+
+
+        .banner4preBuy {
+            display: block;
+            padding-bottom: 90vh;
+            width: 100%;
+            left: 50%;
+            justify-items: center;
+            background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658441712/Ellomax/precompra3_qlds8o.png") no-repeat center;
+            background-size: 90%;
+        }
+
 
         .bannerAbout1 {
             display: block;
@@ -60,7 +117,6 @@
 
         .bannerAbout2 {
             display: block;
-
             padding-bottom: 70vh;
             width: 100%;
             left: 50%;
@@ -120,12 +176,54 @@
             position: absolute;
             left: 55%;
             top: 100%;
+            background-color: #0B91CE;
+            color: #fff;
+            border: none;
+        }
+
+        .banner1preBuy button {
+            width: 24%;
+            height: 6%;
+            border-radius: 25px;
+            border: none;
+            position: absolute;
+            left: 55%;
+            top: 120%;
+            background-color: #0B91CE;
+            color: #fff;
+
+
+        }
+
+        .banner1preSell button {
+            width: 24%;
+            height: 6%;
+            border-radius: 25px;
+            border: none;
+            position: absolute;
+            left: 55%;
+            top: 120%;
+            background-color: #0B91CE;
+            color: #fff;
+
+
+        }
+
+        .banner4preBuy button {
+            width: 24%;
+            height: 6%;
+            border-radius: 25px;
+            position: absolute;
+            left: 55%;
+            top: 335%;
+            background-color: #0B91CE;
+            color: #fff;
+            border: none;
         }
 
         .banner2 {
             display: block;
-
-            padding-bottom: 50vh;
+            padding-bottom: 40vh;
             width: 100%;
             left: 50%;
             justify-items: center;
@@ -137,7 +235,7 @@
 
         .chains {
             display: block;
-            padding-bottom: 40vh;
+            padding-bottom: 25vh;
             width: 100%;
             left: 50%;
             justify-items: center;
@@ -160,7 +258,7 @@
         }
 
 
-        
+
         .banner4 button {
             width: 24%;
             height: 6%;
@@ -225,380 +323,691 @@ BEGIN COUNTER
 END COUNTER
 */
 
+        /*COMPANY
+*/
+        .produtos {
+            margin: 0 auto;
+            max-width: var(--desktop-m);
+            padding: 0 var(--ms1);
+            width: 100%;
+        }
+
+        .informacoes {
+            text-align: center;
+        }
+
+        .tags {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .tagsButton {
+            padding: 0.6rem;
+            border-radius: 0.6rem;
+            border: none;
+            background: #DC784C;
+            font-size: 14px;
+
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
 
 
-        /*
+        }
+
+        .grid-container .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            font-size: 20px;
+            color: #4c94be;
+            text-align: justify;
+            padding: 6px;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: auto auto;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            height: 100%;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .media-grid .grid-item-image {
+            border-radius: 50px 0px 0px 0px;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            z-index: 1;
+            padding: 0;
+        }
+
+        .media-grid .grid-item-image img {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            border-radius: 50px 0px 0px 0px;
+        }
+
+        .media-grid .grid-item-description {
+            background-color: #0B91CE;
+            border-radius: 0px 0px 50px 0px;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            z-index: 1;
+            padding: 10%;
+            padding-top:30%;
+            color: #fff;
+        }
+
+        .media-grid .grid-item-description h3 {
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+        }
+
+        .fotos {
+            padding: 0.6rem;
+            border-radius: 2.6rem;
+            border: none;
+            font-size: 14px;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            justify-content: flex-start;
+            width: fit-content;
+            margin-left: 10%;
+        }
+
+        .fotos button {
+            border-radius: 1.5rem;
+        }
+
+        .fotorama video {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+        }
+
+        .fotorama_img {
+            width: 10%;
+            height: 10%;
+            position: absolute;
+
+        }
+
+        .about-us-employers__time {
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        .buyco-observation {
+            font-size: 15px;
+        }
+
+        .buyco-block.small--margin {
+            margin-bottom: 10%;
+            margin-left: auto;
+        }
+
+        .swiper-container-multirow>.swiper-wrapper {
+            flex-wrap: wrap;
+        }
+
+        .oportunity__investment-analysis h2 {
+            overflow-x: hidden;
+            justify-content: center;
+            font-size: 40px;
+            color: #d2652d;
+        }
+
+        .analyses-col h2 {
+            font-size: 40px;
+            line-height: 48px;
+            margin-bottom: auto;
+        }
+
+        .analyses-col h3 {
+            font-size: 30px;
+            line-height: 48px;
+            color: #ec5c74;
+            font-weight: 600;
+        }
+
+        .analyses-col h5 {
+            font-size: 20px;
+            color: #000;
+        }
+
+        .analyses-col p {
+            font-size: 12px;
+            color: #000;
+        }
+
+        .weight--bold {
+            font-size: 16px;
+        }
+
+        .oportunity__investment-analysis .analyses-col {
+            background-color: #f5f6fa;
+            border: none;
+            border-radius: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-between;
+            padding: calc(var(--ms1)*2);
+            text-align: center;
+            
+        }
+
+        .swiper-slide {
+            flex-shrink: 0;
+            height: 100%;
+            position: relative;
+            transition-property: transform;
+            width: 100%;
+        }
+
+        .modal-body {
+            height: fit-content;
+        }
+
+        .buyco-block.small--margin {
+            margin-bottom: 3%;
+            margin-left: auto;
+        }
+
+        /* .oportunity__sell-pricing .sell-princing__wrapper:before {
+            background-color: #DC784C;
+            border-radius: 50%;
+            content: "";
+            height: 6%;
+            left: 38%;
+            position: absolute;
+            top: 188%;
+            transform: translate(-50%, -50%);
+            width: 3%;
+            z-index: 2;
+        }
+
+        .oportunity__sell-pricing .sell-princing__wrapper:after {
+            background-color: #DC784C;
+            border-bottom-right-radius: 24px;
+            bottom: -97%;
+            content: "";
+            height: 8%;
+            position: absolute;
+            right: 37%;
+            width: 10%;
+            z-index: 0;
+        } */
+
+        .oportunity__sell-pricing .sell-princing__wrapper span {
+            background-color: green;
+            border-radius: 1.5rem;
+            color: #fff;
+            display: block;
+            font-size: 30px;
+            font-weight: 900;
+            line-height: 1.1;
+            padding: 2%;
+            position: relative;
+            z-index: 1;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .oportunity__sell-pricing {
+            margin: 0 auto;
+            text-align: center;
+            width: 50%;
+        }
+
+        .social {
+           
+            height: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5%;
+        }
+
+        .social_midia {
+
+
+            display: inline-flex;
+        }
+
+        .face {
+            background-color: #f5f6fa;
+            border-radius: 1.5rem;
+            font-size: 16px;
+            padding: 5%;
+            display: block;
+            color: #000;
+            width: 400px;
+        }
+        .face .fa-brands, .insta .fa-brands, .site .fa-solid{
+            font-size: 30px;
+            text-align: center;
+            
+        }
+
+        .social a{
+            color: #000;
+        }
+       
+
+        .insta {
+            background-color: #f5f6fa;
+            border-radius: 1.5rem;
+            font-size: 16px;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+            padding: 5%;
+            display: block;
+            color: #000;
+            width: 400px;
+        }
+
+        .site {
+            background-color: #f5f6fa;
+            color: #000;
+            border-radius: 1.5rem;
+            font-size: 16px;
+            padding: 5%;
+            display: block;
+            width: 400px;
+        }
+
+        
+    }
+
+    /*END COMPANY*/
+    /*
 BEGIN CONTACT
 */
 
-        .contactbg {
-            background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658441714/Ellomax/banner2_zgplgg.png") no-repeat;
-            background-size: 100%;
-            justify-items: right;
-            display: flex;
-            margin-bottom: 20vh;
-            padding-bottom: 10vh;
-        }
+    .contactbg {
+        background: url("https://res.cloudinary.com/turing-tecnologia/image/upload/v1658441714/Ellomax/banner2_zgplgg.png") no-repeat;
+        background-size: 100%;
+        justify-items: right;
+        display: flex;
+        margin-bottom: 20vh;
+        padding-bottom: 10vh;
+    }
 
-        .contact-form {
-            background: #fff;
-            margin-top: 10%;
-            margin-bottom: 5%;
-            width: 50%;
-        }
+    .contact-form {
+        background: #fff;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        width: 50%;
+    }
 
-        .contact-form .form-control {
-            border-radius: 1rem;
-            margin-top: 15px;
-        }
+    .contact-form .form-control {
+        border-radius: 1rem;
+        margin-top: 15px;
+    }
 
-        .contact-image {
-            text-align: center;
-        }
+    .contact-image {
+        text-align: center;
+    }
 
-        .contact-image img {
+    .contact-image img {
+        width: 10%;
+        margin-top: -3%;
+    }
 
-            width: 10%;
-            margin-top: -3%;
+    .contact-form form {
+        padding: 14%;
+    }
 
-        }
-
-        .contact-form form {
-            padding: 14%;
-        }
-
-        .contact-form form .row {
-            margin-bottom: -7%;
-            padding-top: 10px;
-        }
+    .contact-form form .row {
+        margin-bottom: -7%;
+        padding-top: 10px;
+    }
 
 
-        .contact-form h2,
-        .contact-form h3 {
-            margin-bottom: 8%;
-            margin-top: -15%;
-            text-align: center;
-            color: #DC784C;
-            font-size: 30px;
-        }
+    .contact-form h2,
+    .contact-form h3 {
+        margin-bottom: 8%;
+        margin-top: -15%;
+        text-align: center;
+        color: #DC784C;
+        font-size: 30px;
+    }
 
-        .contact-form .btnContact {
-            width: 50%;
-            border: none;
-            border-radius: 1rem;
-            padding: 1.5%;
-            background: #DC784C;
-            font-weight: 600;
-            color: #fff;
-            cursor: pointer;
-            margin-top: 15px;
-        }
+    .contact-form .btnContact {
+        width: 50%;
+        border: none;
+        border-radius: 1rem;
+        padding: 1.5%;
+        background: #DC784C;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 15px;
+    }
 
-        .btnContactSubmit {
-            width: 50%;
-            border-radius: 1rem;
-            padding: 1.5%;
-            color: #fff;
-            background-color: #0062cc;
-            border: none;
-            cursor: pointer;
-        }
+    .btnContactSubmit {
+        width: 50%;
+        border-radius: 1rem;
+        padding: 1.5%;
+        color: #fff;
+        background-color: #0062cc;
+        border: none;
+        cursor: pointer;
+    }
 
-        /*
+    /*
 END CONTACT
 */
-        /*BEGIN CONTACT ABOUT*/
-        .contact-form-about {
-            background: #fff;
-            margin-top: 10%;
-            margin-bottom: 5%;
-            width: 40%;
-            float: right;
-            margin-right: 100px;
-            border-radius: 75px;
-        }
+    /*BEGIN CONTACT ABOUT*/
+    .contact-form-about {
+        background: #fff;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        width: 40%;
+        float: right;
+        margin-right: 100px;
+        border-radius: 75px;
+    }
 
-        .contact-form-about .form-control {
-            border-radius: 1rem;
-            margin-top: 15px;
-        }
+    .contact-form-about .form-control {
+        border-radius: 1rem;
+        margin-top: 15px;
+    }
 
-        .contact-image {
-            text-align: center;
-        }
+    .contact-image {
+        text-align: center;
+    }
 
-        .contact-image img {
-            width: 10%;
-            margin-top: -3%;
-        }
+    .contact-image img {
+        width: 10%;
+        margin-top: -3%;
+    }
 
-        .contact-form-about form {
-            padding: 14%;
-        }
+    .contact-form-about form {
+        padding: 14%;
+    }
 
-        .contact-form-about form .row {
-            margin-bottom: -7%;
-            padding-top: 10px;
-        }
-
-
-        .contact-form-about h2,
-        .contact-form-about h3 {
-            margin-bottom: 8%;
-            margin-top: -15%;
-            text-align: center;
-            color: #DC784C;
-            font-size: 30px;
-        }
-
-        .contact-form-about .btnContact {
-            width: 50%;
-            border: none;
-            border-radius: 1rem;
-            padding: 1.5%;
-            background: #DC784C;
-            font-weight: 600;
-            color: #fff;
-            cursor: pointer;
-            margin-top: 15px;
-        }
-
-        .btnContactSubmit {
-            width: 50%;
-            border-radius: 1rem;
-            padding: 1.5%;
-            color: #fff;
-            background-color: #0062cc;
-            border: none;
-            cursor: pointer;
-        }
-
-        /*END CONTACT ABOUT*/
+    .contact-form-about form .row {
+        margin-bottom: -7%;
+        padding-top: 10px;
+    }
 
 
-        /*BEGIN SEARCH HOME*/
+    .contact-form-about h2,
+    .contact-form-about h3 {
+        margin-bottom: 8%;
+        margin-top: -15%;
+        text-align: center;
+        color: #DC784C;
+        font-size: 30px;
+    }
 
-        .search-form {
-            background: -webkit-linear-gradient(-135deg, #DC784C, #0B91CE);
-            background: -o-linear-gradient(-135deg, #DC784C, #0B91CE);
-            background: -moz-linear-gradient(-135deg, #DC784C, #0B91CE);
-            background: linear-gradient(-135deg, #DC784C, #0B91CE);
-            margin-top: 1%;
-            margin-bottom: 5%;
-            width: 60%;
-            border-radius: 50px;
-        }
+    .contact-form-about .btnContact {
+        width: 50%;
+        border: none;
+        border-radius: 1rem;
+        padding: 1.5%;
+        background: #DC784C;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 15px;
+    }
 
-        .search-form .form-control {
-            border-radius: 1rem;
-            margin-top: 5px;
-        }
+    .btnContactSubmit {
+        width: 50%;
+        border-radius: 1rem;
+        padding: 1.5%;
+        color: #fff;
+        background-color: #0062cc;
+        border: none;
+        cursor: pointer;
+    }
 
-        .search-image {
-            text-align: center;
-        }
-
-
-        .occupation {
-            display: inline-flex;
-            width: 100%;
-            justify-content: space-between;
-            align-items: baseline;
-            height: 60%;
-        }
-        
-
-        .occupation input {
-            margin-right: 1%;
-        }
+    /*END CONTACT ABOUT*/
 
 
+    /*BEGIN SEARCH HOME*/
+
+    .search-form {
+        background: -webkit-linear-gradient(-135deg, #DC784C, #0B91CE);
+        background: -o-linear-gradient(-135deg, #DC784C, #0B91CE);
+        background: -moz-linear-gradient(-135deg, #DC784C, #0B91CE);
+        background: linear-gradient(-135deg, #DC784C, #0B91CE);
+        margin-top: 1%;
+        margin-bottom: 5%;
+        width: 60%;
+        border-radius: 50px;
+    }
+
+    .search-form .form-control {
+        border-radius: 1rem;
+        margin-top: 5px;
+    }
+
+    .search-image {
+        text-align: center;
+    }
+
+
+    .occupation {
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: baseline;
+        height: 60%;
+    }
+
+
+    .occupation input {
+        margin-right: 1%;
+    }
+
+    .advanced-segment {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .flex-items {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .advanced-state {
+        display: inline-flex;
+        margin-bottom: 5%;
+        width: 100%;
+        align-items: baseline;
+    }
+
+    .advanced-state #cidade {
+        width: 40rem;
+    }
+
+    .advanced-state #estado {
+        width: 15rem;
+    }
+
+    .search-form form .row {
+        margin-bottom: -7%;
+        padding-top: 10px;
+    }
+
+
+    .search-form h2,
+    .search-form h3 {
+        margin-bottom: 3%;
+        margin-top: 3%;
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .search-form .btnSearch {
+
+        border: none;
+        border-radius: 1rem;
+        padding: 1.5%;
+        background: #DC784C;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+    .search-form .btnSearch:hover {
+        background: #0B91CE;
+        transition: all 0.4s;
+    }
+
+    .btnAdvancedSearch {
+        border: none;
+        border-radius: 100rem;
+        background: #DC784C;
+        font-weight: 600;
+        color: #fff;
+        padding: 1%;
+        cursor: pointer;
+        margin-top: 15px;
+        width: 80%;
+        font-size: 1.0rem;
+    }
+
+    .btnAdvancedSearch:hover {
+        background: #0B91CE;
+        transition: all 0.4s;
+    }
+
+    .btnListSearch {
+        border: none;
+        border-radius: 100rem;
+        background: #DC784C;
+        font-weight: 600;
+        color: #fff;
+        padding: 1%;
+        cursor: pointer;
+        margin-bottom: 1%;
+        width: 50%;
+    }
+
+    .btnListSearch:hover {
+        background: #0B91CE;
+        transition: all 0.4s;
+    }
+
+    .companies {
+        padding-bottom: 0vh;
+    }
+
+    /*END SEARCH HOME*/
 
 
 
-        .advanced-segment {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .flex-items {
-            margin: 10px;
-            text-align: center;
-        }
-
-        .advanced-state {
-            display: inline-flex;
-            margin-bottom: 5%;
-            width: 100%;
-            align-items: baseline;
-        }
-
-        .advanced-state #cidade {
-            width: 40rem;
-        }
-
-        .advanced-state #estado {
-            width: 15rem;
-        }
-
-        .search-form form .row {
-            margin-bottom: -7%;
-            padding-top: 10px;
-        }
-
-
-        .search-form h2,
-        .search-form h3 {
-            margin-bottom: 3%;
-            margin-top: 3%;
-            text-align: center;
-            color: #fff;
-            font-size: 30px;
-        }
-
-        .search-form .btnSearch {
-
-            border: none;
-            border-radius: 1rem;
-            padding: 1.5%;
-            background: #DC784C;
-            font-weight: 600;
-            color: #fff;
-            cursor: pointer;
-            margin-top: 15px;
-        }
-        .search-form .btnSearch:hover {
-            background: #0B91CE;
-            transition: all 0.4s;
-        }
-
-        .btnAdvancedSearch {
-            border: none;
-            border-radius: 100rem;
-            background: #DC784C;
-            font-weight: 600;
-            color: #fff;
-            padding: 1%;
-            cursor: pointer;
-            margin-top: 15px;
-            width: 80%;
-            font-size: 1.0rem;
-        }
-
-        .btnAdvancedSearch:hover {
-            background: #0B91CE;
-            transition: all 0.4s;
-        }
-
-        .btnListSearch {
-            border: none;
-            border-radius: 100rem;
-            background: #DC784C;
-            font-weight: 600;
-            color: #fff;
-            padding: 1%;
-            cursor: pointer;
-            margin-bottom: 1%;
-            width: 50%;
-        }
-
-        .btnListSearch:hover {
-            background: #0B91CE;
-            transition: all 0.4s;
-        }
-
-        /*END SEARCH HOME*/
-
-
-
-        /*
+    /*
 BEGIN TESTIMONIALS
 */
 
-        .snip1533 {
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-            color: #d2652d;
-            display: inline-block;
-            font-family: 'Roboto', Arial, sans-serif;
-            font-size: 16px;
-            margin: 35px 10px 10px;
-            max-width: 310px;
-            min-width: 250px;
-            position: relative;
-            text-align: center;
-            width: 100%;
-            background-color: #ffffff;
-            border-radius: 15%;
-            border: 5px solid #d2652d;
-        }
+    .snip1533 {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+        color: #d2652d;
+        display: inline-block;
+        font-family: 'Roboto', Arial, sans-serif;
+        font-size: 16px;
+        margin: 35px 10px 10px;
+        max-width: 310px;
+        min-width: 250px;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 15%;
+        border: 5px solid #d2652d;
+    }
 
-        .snip1533 *,
-        .snip1533 *:before {
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-            -webkit-transition: all 0.1s ease-out;
-            transition: all 0.1s ease-out;
-        }
+    .snip1533 *,
+    .snip1533 *:before {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.1s ease-out;
+        transition: all 0.1s ease-out;
+    }
 
-        .snip1533 figcaption {
-            padding: 13% 10% 12%;
-        }
+    .snip1533 figcaption {
+        padding: 13% 10% 12%;
+    }
 
-        .snip1533 figcaption:before {
-            -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-            background-color: #fff;
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-            color: #d2652d;
-            content: '\f10d';
-            font-family: 'FontAwesome';
-            font-size: 32px;
-            font-style: normal;
-            left: 50%;
-            line-height: 60px;
-            position: absolute;
-            top: -30px;
-            width: 60px;
-            vertical-align: middle;
-        }
-        
-
-        .snip1533 h3 {
-            color: #3c3c3c;
-            font-size: 20px;
-            font-weight: 300;
-            line-height: 24px;
-            margin: 10px 0 5px;
-        }
-
-        .snip1533 h4 {
-            font-weight: 400;
-            margin: 0;
-            opacity: 0.5;
-        }
-
-        .snip1533 blockquote {
-            font-style: italic;
-            font-weight: 300;
-            margin: 0 0 20px;
-        }
+    .snip1533 figcaption:before {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        color: #d2652d;
+        content: '\f10d';
+        font-family: 'FontAwesome';
+        font-size: 32px;
+        font-style: normal;
+        left: 50%;
+        line-height: 60px;
+        position: absolute;
+        top: -30px;
+        width: 60px;
+        vertical-align: middle;
+    }
 
 
-        /* Demo purposes only */
+    .snip1533 h3 {
+        color: #3c3c3c;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24px;
+        margin: 10px 0 5px;
+    }
 
-        body {
-            text-align: center;
-        }
+    .snip1533 h4 {
+        font-weight: 400;
+        margin: 0;
+        opacity: 0.5;
+    }
 
-        /*
+    .snip1533 blockquote {
+        font-style: italic;
+        font-weight: 300;
+        margin: 0 0 20px;
+    }
+
+
+    /* Demo purposes only */
+
+    body {
+        text-align: center;
+    }
+
+    /*
 END TESTIMONIALS
 */
 
 
 
 
-    }
 
 
 
@@ -696,7 +1105,6 @@ margin: 0 auto;
     display: none;
 }
 
-
 .rentp2,.rentp3 {
     display: none;
 }
@@ -723,7 +1131,7 @@ i {
 .navbar-logo {
 
 	color: #fff;
-	margin-right: 5%;
+	margin-right: 2%;
 	margin-left: 2%;
 
 }

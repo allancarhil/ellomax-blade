@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i');
 
-
-
 body {
     font-family: 'Muli', sans-serif;
     background: #ddd;
@@ -12,13 +10,15 @@ body {
 }
 
 .wsk-cp-product {
-    background: #fff;
+    background: -webkit-linear-gradient(-135deg, #DC784C, #0B91CE);
+            background: -o-linear-gradient(-135deg, #DC784C, #0B91CE);
+            background: -moz-linear-gradient(-135deg, #DC784C, #0B91CE);
+            background: linear-gradient(-135deg, #DC784C, #0B91CE);
     padding: 15px;
     border-radius: 6px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     position: relative;
-    margin: 20px auto;
-    
+    margin: 20px auto; 
 }
 
 .wsk-cp-img {
@@ -42,10 +42,13 @@ body {
     transition: all 0.2s ease-in-out;
     border-radius: 6px;
     height: 200px;
+    margin:auto;
+
 }
 
 .wsk-cp-product:hover .wsk-cp-img {
     top: -40px;
+   
 }
 
 .wsk-cp-product:hover .wsk-cp-img img {
@@ -76,7 +79,6 @@ body {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     -khtml-transform: translate(-50%, -50%);
-
 }
 
 .wsk-cp-text .category>span {
@@ -134,12 +136,14 @@ body {
 .card-footer {
     padding: 25px 0 5px;
     border-top: 1px solid #ddd;
+    text-align: center;
 }
 
 .card-footer:after,
 .card-footer:before {
     content: '';
     display: table;
+    align-items: baseline;
 }
 
 .card-footer:after {
@@ -147,12 +151,12 @@ body {
 }
 
 .card-footer .wcf-left {
-    float: left;
+  text-align: center;
 
 }
 
-.card-footer .wcf-right {
-    float: right;
+.actionsBtn{
+    display: inline-flex;
 }
 
 .price {

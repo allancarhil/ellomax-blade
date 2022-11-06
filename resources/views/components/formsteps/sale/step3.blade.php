@@ -16,6 +16,6 @@
         <input type="file" name="doc" id="doc">
     </div>
     <span class="step-sale-back-2">
-        <-< /span>
+        <-</span>
             <input type="submit" value="ENVIAR">
 </div>
