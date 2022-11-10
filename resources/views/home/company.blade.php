@@ -21,7 +21,7 @@
         </div>
         <div class="grid-item"><i class="fa-solid fa-tag"></i><b>Tipo de Negócio:</b>{{$company->segment->name}} </div>
         <div class="grid-item"><i class="fa-solid fa-location-dot"></i><b>Localização:</b>{{ucfirst($company->street).", ".ucfirst($company->city)."- ".($company->state)}}</div>
-        <div class="grid-item"><i class="fa-solid fa-registered"></i><b>Marca registrada:</b>{{\App\Helpers\CompanyTrademarkHelper::mask($company->trade_mark)}}
+        <div class="grid-item"><i class="fa-solid fa-registered"></i><b>Marca registrada:</b>{{\App\Helpers\CompanyTradeMarkHelper::mask($company->trade_mark)}}
         </div>
       </div>
     </div>
